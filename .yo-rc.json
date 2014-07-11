@@ -1,0 +1,10 @@
+{
+  "generator-gulpplugin-coffee": {
+    "githubUser": "ryanthejuggler",
+    "pluginName": "rho",
+    "appname": "gulp-rho",
+    "realname": "Ryan Muller",
+    "email": "ryan.a.muller@gmail.com",
+    "homepage": "ryan.muller.io"
+  }
+}
