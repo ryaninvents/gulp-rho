@@ -1,6 +1,6 @@
 {
   "name": "gulp-rho",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A plugin for gulp",
   "keywords": [
     "gulpplugin"
@@ -11,7 +11,9 @@
     "email": "ryan.a.muller@gmail.com",
     "url": "ryan.muller.io"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "prepublish": "gulp coffee --require coffee-script/register",
     "test": "coffeelint gulpfile.coffee index.coffee test -f ./coffeelint.json && istanbul test _mocha --report lcovonly -- ./test/*.coffee --require coffee-script/register --reporter spec",
@@ -19,6 +21,7 @@
   },
   "dependencies": {
     "gulp-util": "^2.2.5",
+    "rho": "^0.1.16",
     "through2": "^0.4.0"
   },
   "devDependencies": {

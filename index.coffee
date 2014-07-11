@@ -1,6 +1,7 @@
 'use strict'
 through = require 'through2'
 {PluginError} = require 'gulp-util'
+rho = require 'rho'
 
 createPluginError = (message) ->
     new PluginError 'gulp-rho', message
@@ -31,6 +32,7 @@ gulpRho = () ->
             @emit 'error', createPluginError(err)
             return
           file.contents = new Buffer html
+          file.path = file.path.replace /\.rho$/, '.html'
           @push file
           done()
 
