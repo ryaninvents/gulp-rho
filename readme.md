@@ -2,7 +2,7 @@
 [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![devDependency Status][devdepstat-image]][devdepstat-url]
 
 
-> Rho plugin for [gulp](http://gulpjs.com/) 3.
+> [Rho](http://rhojs.org) plugin for [gulp](http://gulpjs.com/) 3.
 
 ## Usage
 
@@ -20,23 +20,16 @@ var rho = require('gulp-rho');
 
 gulp.task('default', function () {
     gulp.src('./src/*.ext')
-        .pipe(rho({msg: 'More Coffee!'}))
+        .pipe(rho())
         .pipe(gulp.dest("./dist"));
 });
 ```
 
-## Options `rho(opt)`
-
-## opt.msg
-Type: `String`
-Default: `More Coffee!`
-
-The message you wish to attach to file.
-
+`gulp-rho` takes no options currently.
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Ryan Muller](ryan.muller.io)
+[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Ryan Muller](http://ryan.muller.io)
 
 [npm-url]: https://npmjs.org/package/gulp-rho
 [npm-image]: https://badge.fury.io/js/gulp-rho.png
